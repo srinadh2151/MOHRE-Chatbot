@@ -1,0 +1,10 @@
+llama-hub
+llama-index
+pydrive
+docx2txt
+transformers
+torch
+sentence-transformers
+faiss-cpu
+langchain
+pypdf
