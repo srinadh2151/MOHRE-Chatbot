@@ -8,7 +8,7 @@ import streamlit as st
 import torch
 # from langchain.chat_models import ChatOpenAI
 from langchain_community.chat_models import ChatOpenAI
-from llama_index import VectorStoreIndex, SimpleDirectoryReader, ServiceContext
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, ServiceContext
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core.postprocessor import SentenceTransformerRerank
 
