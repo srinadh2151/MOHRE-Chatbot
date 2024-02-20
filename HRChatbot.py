@@ -16,7 +16,8 @@ os.environ['OPENAI_API_KEY']= "sk-SzgbfZpbZY80BG1xXY3iT3BlbkFJnm5ORxggnHc6QORqKk
 
 @st.cache_resource
 def create_query_engine():
-    documents= SimpleDirectoryReader("/content/drive/MyDrive/Colab Notebooks/LLMs/HR Chatbot").load_data()
+    # documents= SimpleDirectoryReader("/content/drive/MyDrive/Colab Notebooks/LLMs/HR Chatbot").load_data()
+    documents= SimpleDirectoryReader("/Documents").load_data()
     llm = ChatOpenAI(temperature=0, max_tokens=800,
                      model_kwargs={"top_p": 0, "frequency_penalty": 0, "presence_penalty": 0})
     embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
