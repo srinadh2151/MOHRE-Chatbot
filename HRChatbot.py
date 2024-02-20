@@ -9,10 +9,10 @@ import torch
 # from langchain.chat_models import ChatOpenAI
 from langchain_community.chat_models import ChatOpenAI
 from llama_index import VectorStoreIndex, SimpleDirectoryReader, ServiceContext
-from llama_index.embeddings import HuggingFaceEmbedding
-from llama_index.indices.postprocessor import SentenceTransformerRerank
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.core.postprocessor import SentenceTransformerRerank
 
-os.environ['OPENAI_API_KEY']= "<OPENAI-api-key>"
+os.environ['OPENAI_API_KEY']= "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"
 
 @st.cache_resource
 def create_query_engine():
