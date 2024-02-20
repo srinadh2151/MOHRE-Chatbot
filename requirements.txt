@@ -9,3 +9,4 @@ faiss-cpu
 langchain
 pypdf
 llama-index-embeddings-huggingface
+llama-index-llms-langchain
