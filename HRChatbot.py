@@ -12,7 +12,7 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, ServiceCon
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core.postprocessor import SentenceTransformerRerank
 
-os.environ['OPENAI_API_KEY']= "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"
+os.environ['OPENAI_API_KEY']= "<Your OPENAI API Key>"
 
 @st.cache_resource
 def create_query_engine():
